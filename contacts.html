@@ -3,52 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контактная информация учебного интернет-магазина.">
-  <title>Контакты – Учебный интернет-магазин</title>
+  <meta name="description" content="Контактная информация – PowerShop.">
+  <title>Контакты – PowerShop</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <header>
-  <div class="site-header">
-    <a class="site-header__logo" href="index.html">ShopProject</a>
-    <nav class="site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list">
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-        <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="site-header">
+      <a class="site-header__logo" href="index.html">
+        <img src="images/logo.webp" alt="PowerShop">
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
-        <a class="breadcrumbs__link" href="index.html">Главная</a>
-        <span class="breadcrumbs__current">Контакты</span>
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Контакты</span>
     </nav>
 
     <section class="section">
       <h1>Контакты</h1>
-      <p>
-        Здесь размещается контактная информация учебного интернет-магазина.
-      </p>
+      <p>Свяжитесь с нами удобным способом.</p>
       <ul>
         <li>Телефон: +7 (900) 000-00-00</li>
-        <li>E-mail: info@example.com</li>
-        <li>Адрес: г. Москва, учебный проект</li>
+        <li>E-mail: info@powershop.ru</li>
+        <li>Адрес: г. Москва, ул. Спортивная, 15</li>
       </ul>
     </section>
 
     <section class="section" id="feedback">
       <h2>Обратная связь</h2>
-      <p>
-        Для отправки заявки используйте форму в модальном окне на главной странице.
-      </p>
-      <a class="button button--primary" href="index.html#contacts">Перейти к форме</a>
+      <p>Для отправки заявки используйте форму на странице заявки.</p>
+      <a class="button button--primary" href="order.html">Перейти к форме</a>
+    </section>
+
+    <section class="section">
+      <h2>Частые вопросы</h2>
+      <details class="faq-item">
+        <summary>Как оформить заказ?</summary>
+        <p>Нажмите кнопку «Заказать» на карточке товара или перейдите на страницу заявки.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Сколько ждать доставку?</summary>
+        <p>Доставка занимает 1-3 рабочих дня по России.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Можно ли вернуть товар?</summary>
+        <p>Да, в течение 14 дней после получения.</p>
+      </details>
     </section>
   </main>
 
@@ -56,5 +70,7 @@
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
     <p>Дисциплина: Фронтенд и бэкенд разработка</p>
   </footer>
+
+  <button class="scroll-top" type="button" id="scroll-top" aria-label="Наверх">↑</button>
 </body>
 </html>

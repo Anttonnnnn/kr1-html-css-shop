@@ -112,3 +112,20 @@ GitHub Pages: https://anttonnnnn.github.io/kr1-html-css-shop/
 - `order-form` — форма заявки;
 - `button` — кнопка с модификаторами `button--primary`, `button--secondary`;
 - `aside-info` — дополнительный блок информации.
+
+
+## Контрольная работа №1
+
+Проект содержит 5 страниц: главная, каталог, карточка товара, заявка, контакты.
+
+Дополнительно реализовано:
+
+- модификаторы карточек (`product-card--featured`, `product-card--discount`);
+- badge с позиционированием (`position: relative` / `absolute`);
+- кнопка «Наверх» (`position: fixed`);
+- sticky-фильтр каталога (`position: sticky`);
+- блок FAQ и блок отзывов.
+
+## Постановка контрольной работы №2
+
+КР №2 — разработка интерфейса на Bootstrap или альтернативном CSS-фреймворке. Отдельный репозиторий `kr2-bootstrap-shop`.

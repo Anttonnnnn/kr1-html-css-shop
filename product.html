@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пояс для пауэрлифтинга – PowerShop.">
+  <title>Пояс для пауэрлифтинга – PowerShop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-header">
+      <a class="site-header__logo" href="index.html">
+        <img src="images/logo.webp" alt="PowerShop">
+      </a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">/</span>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current">Пояс для пауэрлифтинга</span>
+    </nav>
+
+    <section class="section">
+      <div class="product-card product-card--featured product-card--detail">
+        <span class="product-card__badge">Хит продаж</span>
+        <img class="product-card__image" src="images/belt.jpg" alt="Пояс для пауэрлифтинга">
+        <h1 class="product-card__title">Пояс для пауэрлифтинга</h1>
+        <p class="product-card__description">
+          Профессиональный кожаный пояс шириной 10 см для тяжёлых силовых тренировок.
+          Обеспечивает поддержку поясницы и увеличивает внутрибрюшное давление.
+        </p>
+        <p class="product-card__price">Цена: 5000 руб.</p>
+        <button class="button button--primary product-card__button" type="button" data-product="Пояс для пауэрлифтинга">
+          Заказать
+        </button>
+      </div>
+
+      <h2>Характеристики</h2>
+      <table class="product-table">
+        <caption>Основные параметры</caption>
+        <thead>
+          <tr><th>Параметр</th><th>Значение</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Категория</td><td>Пояса</td></tr>
+          <tr><td>Материал</td><td>Натуральная кожа</td></tr>
+          <tr><td>Ширина</td><td>10 см</td></tr>
+          <tr><td>Цена</td><td>5000 руб.</td></tr>
+          <tr><td>Наличие</td><td>В наличии</td></tr>
+          <tr><td>Гарантия</td><td>12 месяцев</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+      <input id="selected-product" name="selected-product" type="hidden">
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input class="order-form__input" id="order-name" name="name" type="text" minlength="2" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input class="order-form__input" id="order-email" name="email" type="email" required>
+      </div>
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+      </div>
+      <div class="order-form__field order-form__field--checkbox">
+        <label class="order-form__label">
+          <input class="order-form__input" id="order-agreement" name="agreement" type="checkbox" required>
+          Я согласен на обработку данных
+        </label>
+      </div>
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" hidden>Форма успешно отправлена!</p>
+  <button class="scroll-top" type="button" id="scroll-top" aria-label="Наверх">↑</button>
+</body>
+</html>
